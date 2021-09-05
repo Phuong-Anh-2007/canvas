@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+</head>
+<body>
+    <canvas id="canvas" width="600" height="600" style="border: 2px solid #000000"></canvas>
+    <script>
+        let ctx = document.getElementById('canvas').getContext('2d');
+        ctx.beginPath();
+
+        //Vẽ hình tròn
+        ctx.arc(200, 200, 50, 0, Math.PI * 2);
+        ctx.stroke();
+
+        //Vẽ hình chữ nhật
+        ctx.fillStyle = 'red';
+        ctx.fillRect(350, 150, 200, 100);
+
+        //Vẽ chữ
+        ctx.font ='30px Arial black';
+        ctx.fillStyle='black';
+        ctx.fillText('Hello world',10,50);
+        ctx.stroke();
+    </script>
+</body>
+</html>
