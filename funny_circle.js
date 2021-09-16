@@ -49,7 +49,5 @@ function draw() {
     }
 }
 
-function continue_() {
-    myVar = setInterval(draw,2000);
-}
+
 
